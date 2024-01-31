@@ -9,7 +9,6 @@ Role:
 State:
     players (array of Player objects)
     current_player (Player object)
-    current_turn (Turn object)
 Methods:
     initialize: Set up players, initialize the first turn, and set the initial current player.
     play: Contains the game loop, alternating turns between players, checking game over conditions, and managing the current player.
@@ -46,16 +45,7 @@ Methods:
 ------
 
 ------
-3. Turn
-Role: 
-    Announces a new turn
-Methods:
-    announce_turn: Display a message indicating a new turn.
-    set_current_player: Switch the current player.
-------
-
-------
-4. Question
+3. Question
 Role: 
     Generates and manages math questions, including verifying answers.
 Methods:
