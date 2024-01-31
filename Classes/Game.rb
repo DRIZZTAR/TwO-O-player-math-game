@@ -22,6 +22,9 @@ class Game
       break if game_over?
       switch_player
     end
+    announce_winner
+    puts "🎉🎉🎉Game Over🎉🎉🎉"
+    puts "👋👋👋Goodbye👋👋👋"
   end
 
   private
@@ -39,5 +42,14 @@ class Game
   def show_current_scores
     scores = @players.map { |player| player.show_lives }.join(" VS ")
     puts scores
+  end
+
+  def announce_winner
+    winner = @players.find { |player| player.lives > 0 }
+    if winner
+      puts "#{winner.name} wins with a score of #{winner.lives}/3!🏆"
+    else
+      puts "It's a draw!"
+    end
   end
 end
