@@ -1,4 +1,4 @@
-Classes: MathGame, Player, Turn, Question
+Classes: MathGame, Player, Question
 
 Class Roles and Methods:
 
