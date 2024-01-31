@@ -43,7 +43,6 @@ Methods:
     initialize: Set up the player with a certain number of lives.
     update_lives: Decrease lives when a question is answered incorrectly.
     show_lives: Display the current number of lives.
-    User I/O: This class might have some output (like showing lives) but won't handle the main game I/O.
 ------
 
 ------
