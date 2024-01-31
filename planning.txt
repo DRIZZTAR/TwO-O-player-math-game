@@ -2,7 +2,7 @@ Classes: MathGame, Player, Turn, Question
 
 Class Roles and Methods:
 
-
+------
 1. MathGame
 Role:
     Acts as the controller of the game, managing the game flow, turns, and interactions between players and questions.
@@ -13,6 +13,7 @@ State:
 Methods:
     initialize: Set up players, initialize the first turn, and set the initial current player.
     play: Contains the game loop, alternating turns between players, checking game over conditions, and managing the current player.
+
         def play
           # ... game setup and loop ...
 
@@ -26,11 +27,13 @@ Methods:
 
           # ... check for game over, switch players, etc. ...
         end
+
     switch_player: Changes the current_player to the next player.
 Game Loop: Contains the game loop.
 Current Player Management: Manages the current player within this class.
+------
 
-
+------
 2. Player
 Role: 
     Represents a player in the game, keeping track of their state.
@@ -41,16 +44,18 @@ Methods:
     update_lives: Decrease lives when a question is answered incorrectly.
     show_lives: Display the current number of lives.
     User I/O: This class might have some output (like showing lives) but won't handle the main game I/O.
+------
 
-
+------
 3. Turn
 Role: 
     Announces a new turn
 Methods:
     announce_turn: Display a message indicating a new turn.
     set_current_player: Switch the current player.
+------
 
-
+------
 4. Question
 Role: 
     Generates and manages math questions, including verifying answers.
@@ -84,4 +89,4 @@ Methods:
   end
     User Input/Output: This class will handle I/O related to questions (asking and receiving answers).
                        if !answer from player player.lives -= 1
-
+------
